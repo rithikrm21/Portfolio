@@ -301,22 +301,22 @@ span{
     background-color: var(--bg-color);
     width: 50px;
 }
-.Projects {
+.Projects
+{
     background: var(--bg-color);
 }
-
-.Projects h2 {
+.Projects h2{
     margin-bottom: 8rem;
 }
-
-.project-container {
+.project-container
+{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 2.5rem;
 }
-
-.project-container .project-box {
+.project-container .project-box
+{
     position: relative;
     height: 550px;
     overflow: hidden;
@@ -325,23 +325,20 @@ span{
     border: 3px solid transparent;
     transition: 0.3s ease-in-out;
 }
-
-.project-container .project-box:hover {
-    border: 3px solid var(--main-color);
+.project-container .project-box:hover{
+    border: 3px solid var(--main-color);   
 }
-
-.project-box img {
+.project-box img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 0.5s ease-in-out;
 }
-
-.project-box:hover img {
+.project-box:hover img{
     transform: scale(1.05);
 }
-
-.project-box .project-info {
+.project-box .project-info
+{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -353,28 +350,22 @@ span{
     gap: 1rem;
     padding: 0 4rem;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.2);  /* ✅ Soft transparent overlay */
-    opacity: 0;
     transition: 0.5s ease-in-out;
+    backdrop-filter: grayscale(100%);
 }
-
-.project-box .project-info:hover {
-    background: rgba(0, 0, 0, 0.55); /* ✅ Darker overlay on hover */
-    opacity: 1;
+.project-box .project-info:hover{
+    background: rgba(0 ,0,0,0.5);
+    backdrop-filter: grayscale(0%);
 }
-
-.project-info h4 {
-    font-size: 3.2rem;
-    color: #fff;
+.project-info h4{
+    font-size: 4rem;
+    color: var(--main-color);
     font-weight: 800;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
 }
-
-.project-info p {
+.project-info p{
     font-size: 1.6rem;
     margin: 0.3rem 0 1rem;
-    color: #f0f0f0;
-    line-height: 1.5;
+    color: var(--main-color);   
 }
 .timeline-section
 {
@@ -702,4 +693,5 @@ span{
 ::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(transparent, #00c6ff);
 }
+
 
